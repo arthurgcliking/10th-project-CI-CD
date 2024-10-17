@@ -27,7 +27,9 @@ jobs:
           npm install
 
       - name: Run tests
-        run: npm test -- --coverage
+        run: |
+          cd front
+          npm test -- --coverage
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
