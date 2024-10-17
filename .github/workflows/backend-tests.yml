@@ -36,7 +36,7 @@ jobs:
         run: mvn test jacoco:report
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: backend-coverage-report
           path: target/site/jacoco
