@@ -30,6 +30,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Change directory to back-end
+        run: cd back  # Changer le répertoire vers le back-end
+
       - name: Build with Maven
         run: mvn clean install
 
@@ -40,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: backend-coverage-report
-          path: target/site/jacoco
+          path: back/target/site/jacoco
