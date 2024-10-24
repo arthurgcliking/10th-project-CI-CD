@@ -40,4 +40,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=arthurgcliking_10th-project-CI-CD_a5b396ec-40f6-4ce5-9dfe-754b8971de68 -Dsonar.projectName='10th-project-CI-CD'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=arthurgcliking_10th-project-CI-CD_a5b396ec-40f6-4ce5-9dfe-754b8971de68 -Dsonar.projectName='10th-project-CI-CD' -X
