@@ -44,7 +44,7 @@ jobs:
           echo "Setting up Back-End code quality analysis"
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=arthurgcliking_10th-project-CI-CD
       - name: Upload SonarQube Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: sonarqube-report
           path: .scannerwork/report-task.txt
